@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veloura Atelier — Luxury Edit</title>
+    <meta name="description" content="Veloura Atelier — a premium multi-product storefront." />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header" id="top">
+        <div class="container header-inner">
+          <a class="logo" href="index.html">Veloura</a>
+          <nav class="nav" aria-label="Primary">
+            <a class="nav-link is-active" href="index.html">Home</a>
+            <a class="nav-link" href="shop.html">Shop</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-btn" aria-label="Search">
+              <span class="icon">⌕</span>
+            </button>
+            <button class="icon-btn" aria-label="Wishlist">
+              <span class="icon">♡</span>
+              <span class="badge" id="wishlist-count">0</span>
+            </button>
+            <button class="icon-btn" aria-label="Cart">
+              <span class="icon">🛍</span>
+              <span class="badge" id="cart-count">0</span>
+            </button>
+            <button class="btn btn-ghost" id="theme-toggle">Dark</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <div class="container hero-content">
+            <p class="eyebrow">Curated Luxe Essentials</p>
+            <h1 class="hero-title" data-split="words">
+              A boutique experience for the modern collector.
+            </h1>
+            <p class="hero-subtitle">
+              Discover limited-run pieces, handcrafted details, and editorial styling that feels
+              unapologetically premium.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="shop.html">Shop Now</a>
+              <a class="btn btn-outline" href="shop.html#collections">Explore Collections</a>
+            </div>
+            <div class="hero-product">
+              <div class="hero-card">
+                <p class="caption">New Capsule</p>
+                <h3>Velvet Noir Tote</h3>
+                <p class="price">$248</p>
+              </div>
+            </div>
+          </div>
+          <a class="scroll-indicator" href="#featured">Scroll</a>
+        </section>
+
+        <section class="marquee" aria-label="Announcements">
+          <div class="marquee-track">
+            <span>Free shipping over $150</span>
+            <span>Limited drop live now</span>
+            <span>Secure checkout</span>
+            <span>Stylist concierge 24/7</span>
+            <span>Free shipping over $150</span>
+            <span>Limited drop live now</span>
+            <span>Secure checkout</span>
+            <span>Stylist concierge 24/7</span>
+          </div>
+        </section>
+
+        <section class="section" id="featured">
+          <div class="container">
+            <div class="section-head">
+              <h2>Featured Categories</h2>
+              <p>Elevate every moment with tailored pieces and timeless silhouettes.</p>
+            </div>
+            <div class="category-grid">
+              <article class="category-card reveal">
+                <div class="category-media" style="--bg: url('images/hero-blob.svg');"></div>
+                <div class="category-info">
+                  <h3>Outerwear</h3>
+                  <p>32 products</p>
+                </div>
+                <span class="category-cta">Browse</span>
+              </article>
+              <article class="category-card span-two reveal">
+                <div class="category-media" style="--bg: url('images/hero-blob.svg');"></div>
+                <div class="category-info">
+                  <h3>Accessories</h3>
+                  <p>48 products</p>
+                </div>
+                <span class="category-cta">Browse</span>
+              </article>
+              <article class="category-card reveal">
+                <div class="category-media" style="--bg: url('images/hero-blob.svg');"></div>
+                <div class="category-info">
+                  <h3>Footwear</h3>
+                  <p>20 products</p>
+                </div>
+                <span class="category-cta">Browse</span>
+              </article>
+              <article class="category-card reveal">
+                <div class="category-media" style="--bg: url('images/hero-blob.svg');"></div>
+                <div class="category-info">
+                  <h3>Jewelry</h3>
+                  <p>12 products</p>
+                </div>
+                <span class="category-cta">Browse</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-dark arrivals">
+          <div class="container">
+            <div class="section-head light">
+              <h2>New Arrivals</h2>
+              <p>Limited-run pieces with modern silhouettes and couture finish.</p>
+            </div>
+            <div class="arrival-track is-loading" id="arrival-track">
+              <article class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                  <h3>Ivory Sculpted Heel</h3>
+                  <p class="price">$186</p>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <button class="icon-btn" aria-label="Quick add">＋</button>
+              </article>
+              <article class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                  <h3>Signature Silk Blouse</h3>
+                  <p class="price">$144</p>
+                  <div class="rating">★★★★☆</div>
+                </div>
+                <button class="icon-btn" aria-label="Quick add">＋</button>
+              </article>
+              <article class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                  <h3>Marble Resin Cuff</h3>
+                  <p class="price">$82</p>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <button class="icon-btn" aria-label="Quick add">＋</button>
+              </article>
+              <article class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                  <h3>Velvet Noir Tote</h3>
+                  <p class="price">$248</p>
+                  <div class="rating">★★★★★</div>
+                </div>
+                <button class="icon-btn" aria-label="Quick add">＋</button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="value-grid">
+              <article class="value-card reveal">
+                <div class="value-icon">✦</div>
+                <h3>Free Shipping</h3>
+                <p>Complimentary on all orders above $150.</p>
+              </article>
+              <article class="value-card reveal">
+                <div class="value-icon">✧</div>
+                <h3>Easy Returns</h3>
+                <p>30-day effortless returns with courier pickup.</p>
+              </article>
+              <article class="value-card reveal">
+                <div class="value-icon">✶</div>
+                <h3>Secure Checkout</h3>
+                <p>PCI-compliant payment systems and encryption.</p>
+              </article>
+              <article class="value-card reveal">
+                <div class="value-icon">✹</div>
+                <h3>24/7 Concierge</h3>
+                <p>Always-on styling support for every purchase.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head">
+              <h2>Trending Now</h2>
+              <p>Curated capsules updated weekly by our editors.</p>
+            </div>
+            <div class="tabs" role="tablist">
+              <button class="tab is-active" data-tab="best" role="tab">Best Sellers</button>
+              <button class="tab" data-tab="sale" role="tab">On Sale</button>
+              <button class="tab" data-tab="rated" role="tab">Top Rated</button>
+            </div>
+            <div class="tab-panels">
+              <div class="tab-panel is-active" data-panel="best">
+                <div class="product-grid">
+                  <article class="product-card reveal">
+                    <span class="product-badge">HOT</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Obsidian Trench</h3>
+                      <p class="price">$312</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                  <article class="product-card reveal">
+                    <span class="product-badge">NEW</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Celeste Knit Dress</h3>
+                      <p class="price">$192</p>
+                      <div class="rating">★★★★☆</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                  <article class="product-card reveal">
+                    <span class="product-badge">SALE</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Ivory Leather Mule</h3>
+                      <p class="price">$138</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                </div>
+              </div>
+              <div class="tab-panel" data-panel="sale">
+                <div class="product-grid">
+                  <article class="product-card">
+                    <span class="product-badge">SALE</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Silk Midnight Scarf</h3>
+                      <p class="price">$64</p>
+                      <div class="rating">★★★★☆</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                  <article class="product-card">
+                    <span class="product-badge">SALE</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Gilded Frame Sunglasses</h3>
+                      <p class="price">$72</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                </div>
+              </div>
+              <div class="tab-panel" data-panel="rated">
+                <div class="product-grid">
+                  <article class="product-card">
+                    <span class="product-badge">TOP</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Rosé Quartz Earrings</h3>
+                      <p class="price">$92</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                  <article class="product-card">
+                    <span class="product-badge">TOP</span>
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                      <h3>Monarch Clutch</h3>
+                      <p class="price">$118</p>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                    <button class="btn btn-ghost">Quick Add</button>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="promo-banner">
+          <div class="container promo-inner">
+            <div>
+              <p class="eyebrow">Limited Offer</p>
+              <h2>Midnight Atelier Sale</h2>
+              <p>Up to 35% off curated essentials.</p>
+            </div>
+            <div class="countdown" id="countdown">
+              <div><span id="days">03</span><small>Days</small></div>
+              <div><span id="hours">18</span><small>Hours</small></div>
+              <div><span id="minutes">42</span><small>Minutes</small></div>
+              <div><span id="seconds">09</span><small>Seconds</small></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section testimonials">
+          <div class="container">
+            <div class="section-head">
+              <h2>What Clients Say</h2>
+              <p>Editorial reviews from our global style community.</p>
+            </div>
+            <div class="testimonial-slider" aria-live="polite">
+              <div class="testimonial-track" id="testimonial-track">
+                <article class="testimonial">
+                  <p>“Every piece feels couture. The delivery and packaging were impeccable.”</p>
+                  <div class="testimonial-meta">
+                    <span class="avatar">AV</span>
+                    <div>
+                      <strong>Amelia V.</strong>
+                      <span>★★★★★</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="testimonial">
+                  <p>“The styling concierge helped me build a capsule wardrobe in a week.”</p>
+                  <div class="testimonial-meta">
+                    <span class="avatar">JR</span>
+                    <div>
+                      <strong>Jules R.</strong>
+                      <span>★★★★★</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="testimonial">
+                  <p>“Luxe fabrics, perfect tailoring. I always feel elevated.”</p>
+                  <div class="testimonial-meta">
+                    <span class="avatar">MS</span>
+                    <div>
+                      <strong>Marina S.</strong>
+                      <span>★★★★☆</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="slider-controls">
+                <button class="icon-btn" id="prev-testimonial" aria-label="Previous testimonial">‹</button>
+                <div class="dots" id="testimonial-dots"></div>
+                <button class="icon-btn" id="next-testimonial" aria-label="Next testimonial">›</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-head">
+              <h2>Veloura on Instagram</h2>
+              <p>Follow the atelier for daily editorials and exclusive drops.</p>
+            </div>
+            <div class="ugc-grid">
+              <a class="ugc-card" href="#">
+                <span class="ugc-overlay">❤</span>
+              </a>
+              <a class="ugc-card" href="#">
+                <span class="ugc-overlay">❤</span>
+              </a>
+              <a class="ugc-card" href="#">
+                <span class="ugc-overlay">❤</span>
+              </a>
+              <a class="ugc-card" href="#">
+                <span class="ugc-overlay">❤</span>
+              </a>
+              <a class="ugc-card" href="#">
+                <span class="ugc-overlay">❤</span>
+              </a>
+              <a class="ugc-card" href="#">
+                <span class="ugc-overlay">❤</span>
+              </a>
+            </div>
+            <div class="section-foot">
+              <a class="btn btn-outline" href="#">Follow Us</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <h3>Veloura Atelier</h3>
+            <p>Luxury editorial essentials curated by our in-house stylists.</p>
+          </div>
+          <form class="newsletter" aria-label="Newsletter">
+            <label for="newsletter-email">Stay in the loop</label>
+            <div class="newsletter-field">
+              <input id="newsletter-email" type="email" placeholder="Email address" />
+              <button class="btn btn-primary" type="submit">Join</button>
+            </div>
+          </form>
+          <div class="footer-links">
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Care</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </footer>
+
+      <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
